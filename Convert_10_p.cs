@@ -52,7 +52,7 @@ namespace Converter
         //Преобразовать десятичное действительное число в с.сч. с осн. р.
         public static string Do(double n, int p, int c)
         {
-            int n_int = (int)n;//целая часть числа
+            var n_int = (int)n;//целая часть числа
             double n_flt;
             if (n > 1)
             {

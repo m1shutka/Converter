@@ -97,7 +97,7 @@ namespace Converter
         private void trackBar2_Scroll(object sender, EventArgs e)
         {
             numericUpDown2.Value = trackBar2.Value;
-            this.UpdateP2();
+            //this.UpdateP2();
         }
 
         //Изменяет значение основания с.сч. результата.
@@ -122,7 +122,7 @@ namespace Converter
         }
 
         //Пункт меню Справка.
-        /*private void справкаToolStripMenuItem_Click(object sender, EventArgs e)
+       private void справкаToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AboutBox1 a = new AboutBox1();
             a.Show();
@@ -139,11 +139,8 @@ namespace Converter
                 return;
             }
             //Ообразить историю.
-            for (int i = 0; i < ctl.history.Count(); i++)
-            {
-                history.textBox1.AppendText(ctl.history[i].ToString());
-            }
-        }*/
+            history.textBox1.AppendText(ctl.history.GetRecord());
+        }
 
         //Обработка алфавитно-цифровых клавиш.
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)

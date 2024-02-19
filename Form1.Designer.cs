@@ -414,12 +414,14 @@
             this.историяToolStripMenuItem.Name = "историяToolStripMenuItem";
             this.историяToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.историяToolStripMenuItem.Text = "История";
+            this.историяToolStripMenuItem.Click += new System.EventHandler(this.историяToolStripMenuItem1_Click);
             // 
             // справкаToolStripMenuItem
             // 
             this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
             this.справкаToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.справкаToolStripMenuItem.Text = "Справка";
+            this.справкаToolStripMenuItem.Click += new System.EventHandler(this.справкаToolStripMenuItem_Click);
             // 
             // menuStrip1
             // 
@@ -437,6 +439,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(16, 45);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(318, 20);
             this.textBox1.TabIndex = 29;
             // 
@@ -444,6 +447,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(16, 176);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(318, 20);
             this.textBox2.TabIndex = 30;
             // 
@@ -483,7 +487,11 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
+            this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(365, 489);
+            this.MinimumSize = new System.Drawing.Size(365, 489);
             this.Name = "Form1";
             this.Text = "Converter";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
